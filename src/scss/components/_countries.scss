@@ -1,8 +1,6 @@
 /*Countries*/
 
-.countries {
-  width: 100%;
-}
+
 .countries__container {
   margin: 30px 0;
   display: flex;
@@ -29,8 +27,5 @@
   }
 }
 .countries__country-container p {
-  margin-bottom: 10px;
-  span {
-    font-weight: var(--Font-Weight-SemiBold);
-  }
+  @extend %country-descrip;
 }

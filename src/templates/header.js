@@ -3,12 +3,10 @@ const headerTemplate = () => {
   <div class="container">
     <div class="header__container">
       <h1>
-        Where in the world?
+        <a href="#/">
+          Where in the world?
+        </a>
       </h1>
-      <span>
-        <i class="fas fa-moon"></i>
-          Dark Mode
-      </span>
     </div>
   </div>
   `;

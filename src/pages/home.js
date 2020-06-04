@@ -3,7 +3,6 @@ import getData from '../utils/getData';
 const home = async () => {
   const countries = await getData();
   const countriesName = countries;
-  console.log(countriesName);
   const view = `
   <div class="container">
     <div class="countries__container">

@@ -5,7 +5,6 @@ const resolveRoute = (route) => {
       validRoute = route;
     } else  {
       validRoute = `/:name`;
-    console.log(route);
 
     }
     // let validRoute = route === '/home' ? route : `/:name`;
