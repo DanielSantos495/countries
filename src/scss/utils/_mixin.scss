@@ -1,0 +1,46 @@
+/*Mixins*/
+
+%outline {
+  background-color: var(--White);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px var(--Dark-Gray-Shadow);
+  overflow: hidden;
+}
+
+%title-country {
+  margin-bottom: 40px;
+  font-size: var(--Font-Size-Detail-Page);
+  font-weight: var(--Font-Weight-Bold);
+}
+
+%country-descrip {
+  margin: 10px 0;
+  span {
+    font-weight: var(--Font-Weight-SemiBold);
+  }
+}
+
+/*Break points*/
+@mixin media($breakpoint) {
+
+  @if $breakpoint == cellphone {
+    @media screen and (min-width: 480px) and (max-width: 599px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == tablet-small {
+    @media screen and (min-width: 600px) and (max-width: 799px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == tablet {
+    @media screen and (min-width: 800px) and (max-width: 1023px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == laptop {
+    @media screen and (min-width: 1024px){
+      @content;
+    }
+  }
+}

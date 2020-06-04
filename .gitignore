@@ -1,7 +1,5 @@
 *.jpg
 *.png
-*.scss
 /node_modules/
-/src/
 /assets/
 /design/
