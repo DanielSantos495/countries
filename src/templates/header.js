@@ -1,15 +1,16 @@
 const headerTemplate = () => {
   const view = `
-    <div>
+  <div class="container">
+    <div class="header__container">
       <h1>
-        <a>
-          Where in the wolrd?
-        </a>
+        Where in the world?
       </h1>
-      <a>
-        Dark mode
-      </a>
+      <span>
+        <i class="fas fa-moon"></i>
+          Dark Mode
+      </span>
     </div>
+  </div>
   `;
   return view
 }

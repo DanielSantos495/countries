@@ -1,0 +1,14 @@
+/*Mixins*/
+
+%outline {
+  background-color: var(--White);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px var(--Dark-Gray-Shadow);
+  overflow: hidden;
+}
+
+%title-country {
+  margin-bottom: 40px;
+  font-size: var(--Font-Size-Detail-Page);
+  font-weight: var(--Font-Weight-Bold);
+}

@@ -1,42 +1,12 @@
-const region = () => {
+import getHash from '../utils/getHash';
+import getData from '../utils/getData';
+
+const region = async () => {
+  const regionUrl = getHash()
+  const region = await getData(regionUrl, 'region')
+  const regionName = region;
   const view = `
-    <div>
-      <form>
-        <input type="text" placeholder="Search for a country..."/>
-      </form>
-      <nav>
-        <p>
-          Filter by Region
-        </p>
-        <ul>
-          <li>
-            <a href="">
-              Africa
-            </a>
-          </li>
-          <li>
-            <a href="">
-              America
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Asia
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Europe
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Oceania
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+  ${regionName.map(region => `${region}` )}
     <div>
       <img src="" alt="Flag of country"/>
       <p>Germany</p>

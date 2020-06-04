@@ -1,0 +1,39 @@
+/*Variables------------------------------------Variables*/
+
+
+
+/*Usamos variables nativas de CSS para poder acceder a ellos con JS*/
+:root {
+  /*Colors*/
+
+  /*Light Mode*/
+  --Very-Light-Gray: hsl(0, 0%, 98%); //(Light Mode Background)
+  --Very-Dark-Blue: hsl(200, 15%, 8%); // (Light Mode Text)
+  --Dark-Gray: hsl(0, 0%, 52%); //(Light Mode Input)
+
+  /*Dark Mode*/
+  --Very-Dark-Blue: hsl(207, 26%, 17%); //(Dark Mode Background)
+  --Dark-Blue: hsl(209, 23%, 22%); // (Dark Mode Elements)
+
+  /*Both Mode*/
+  --White: hsl(0, 0%, 100%); //(Dark Mode Text & Light Mode Elements)
+
+  /*Shadow*/
+  --Dark-Gray-Shadow: hsl(0, 0%, 85%); //(Light Mode Input)
+
+
+  /*Typography*/
+
+  /*Sizes*/
+  --Font-Size-Home-Items: 14px;
+  --Font-Size-Detail-Page: 16px;
+
+  /*Fonts*/
+  --Font-Family: 'Nunito Sans', Helvetica;
+  /*Weight*/
+  --Font-Weight-Bold: 800;
+  --Font-Weight-SemiBold: 600;
+  --Font-Weight-Light: 300;
+
+}
+
